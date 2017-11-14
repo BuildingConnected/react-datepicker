@@ -1,5 +1,5 @@
-`datepicker` (component)
-========================
+`index` (component)
+===================
 
 General datepicker component.
 
@@ -40,7 +40,6 @@ General datepicker component.
 |`onBlur`|`func`|`function() {}`||
 |`onChange` (required)|`func`|`function() {}`||
 |`onChangeRaw`|`func`|||
-|`onClickOutside`|`func`|`function() {}`||
 |`onFocus`|`func`|`function() {}`||
 |`onKeyDown`|`func`|`function() {}`||
 |`onMonthChange`|`func`|`function() {}`||

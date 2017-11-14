@@ -2,7 +2,7 @@ import React from 'react'
 import DatePicker from 'react-datepicker'
 import moment from 'moment'
 
-export default class Placement extends React.Component {
+export default class OpenByDefault extends React.Component {
   constructor (props) {
     super(props)
     this.state = {
@@ -20,23 +20,19 @@ export default class Placement extends React.Component {
     return <div className="row">
       <pre className="column example__code">
         <code className="jsx">{`
-<DatePicker
-    selected={this.state.startDate}
-    onChange={this.handleChange}
-    popoverAttachment="bottom right"
-    popoverTargetAttachment="top right"
-    popoverTargetOffset="0px 0px"
-/>
-`}
+          <DatePicker
+            autoFocus
+            selected={this.state.startDate}
+            onChange={this.handleChange}
+          />
+          `}
         </code>
       </pre>
       <div className="column">
         <DatePicker
+            autoFocus
             selected={this.state.startDate}
-            onChange={this.handleChange}
-            popoverAttachment="bottom right"
-            popoverTargetAttachment="top right"
-            popoverTargetOffset="0px 0px" />
+            onChange={this.handleChange} />
       </div>
     </div>
   }
